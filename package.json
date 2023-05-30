@@ -1,0 +1,37 @@
+{
+  "name": "personalexpressportfoliosite",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "description": "Assignment 1 Web App Development",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kevin-Lamanna/PersonalExpressPortfolioSite.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Express",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Portfolio"
+  ],
+  "author": "Kevin Lamanna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kevin-Lamanna/PersonalExpressPortfolioSite/issues"
+  },
+  "homepage": "https://github.com/Kevin-Lamanna/PersonalExpressPortfolioSite#readme"
+}
