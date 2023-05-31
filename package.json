@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/server"
+    "start": "node ./bin/server.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -14,7 +14,6 @@
     "morgan": "~1.9.1"
   },
   "description": "Assignment 1 Web App Development",
-  "main": "app.js",
   "devDependencies": {},
   "repository": {
     "type": "git",
@@ -33,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/Kevin-Lamanna/PersonalExpressPortfolioSite/issues"
   },
-  "homepage": "https://github.com/Kevin-Lamanna/PersonalExpressPortfolioSite#readme"
+  "homepage": "https://github.com/Kevin-Lamanna/PersonalExpressPortfolioSite#readme",
+  "bin": {
+    "personalexpressportfoliosite": "bin/server.js"
+  }
 }
