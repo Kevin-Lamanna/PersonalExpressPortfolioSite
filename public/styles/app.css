@@ -39,7 +39,9 @@ a {
   float: left;
 }
 
-
+.flash{
+  color: red;
+}
 
 
 /* Form CSS */
