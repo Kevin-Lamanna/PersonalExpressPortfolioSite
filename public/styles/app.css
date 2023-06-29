@@ -4,7 +4,11 @@
 } */
 
 a {
-  color: #00B7FF;
+  color: #fd7e14;
+}
+
+a:hover {
+  color: #ffac07;
 }
 
 /* Home Page home Div */

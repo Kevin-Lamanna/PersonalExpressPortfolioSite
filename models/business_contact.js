@@ -11,8 +11,8 @@ let mongoose = require('mongoose');
 // Create a model class
 let contactModel = mongoose.Schema(
     {
-        contact_name: String,
-        contact_number: Number,
+        name: String,
+        number: String,
         email: String            
     },
     {

@@ -49,8 +49,8 @@ module.exports.processAddPage = async (req, res, next) => {
 
         let newContact = ContactModel({
             _id: req.body.id,
-            contact_name: req.body.contact_name,
-            contact_number: req.body.contact_number,
+            name: req.body.name,
+            number: req.body.number,
             email: req.body.email
         });
 
@@ -78,7 +78,7 @@ module.exports.displayEditPage = async (req, res, next) => {
         res.render('business/add_edit',
             {
                 title: 'Edit a new Contact',
-                business_contact: contactToEdit,
+                contact: contactToEdit,
                 userName: req.user ? req.user.username : ''
             });
     } catch (error) {
@@ -99,8 +99,8 @@ module.exports.processEditPage = async (req, res, next) => {
         // Builds updatedContact from the values of the body of the request.
         let updatedContact = ContactModel({
             _id: req.body.id,
-            contact_name: req.body.contact_name,
-            contact_number: req.body.contact_number,
+            name: req.body.name,
+            number: req.body.number,
             email: req.body.email
         });
 
