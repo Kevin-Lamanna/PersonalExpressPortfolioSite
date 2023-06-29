@@ -1,15 +1,24 @@
+/*
+Filename: app.js
+Author: Kevin Lamanna
+StudentID: 301224451
+Web App name: https://kevin-lamanna-express-site.herokuapp.com/
+*/
+
+// Module imports
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
 let session = require('express-session');
 let flash = require('connect-flash');
 let passport = require('passport');
 
+// Router imports
 var indexRouter = require('../routes/index');
 var usersRouter = require('../routes/users');
+let businessRouter = require('../routes/business')
 
 var app = express();
 
@@ -31,7 +40,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.static(path.join(__dirname, '../node_modules')));
 
-// Sets up passport
+// Sets up flash and passport
 app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
@@ -39,6 +48,7 @@ app.use(passport.session());
 // Routers
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/business', businessRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

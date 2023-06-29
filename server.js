@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-// var configDB = require('./config/db')
+var configDB = require('./config/db')
 var app = require('./config/app');
 var debug = require('debug')('personalexpressportfoliosite:server');
 var http = require('http');
@@ -14,7 +14,7 @@ const configurePassport = require('./config/passport');
  * Get port from environment and store in Express.
  */
 
-// var db = configDB();
+var db = configDB();
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
@@ -28,7 +28,6 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 const passport = configurePassport();
-
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
