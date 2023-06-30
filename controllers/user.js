@@ -2,6 +2,7 @@
 Filename: user.js
 Author: Kevin Lamanna
 StudentID: 301224451
+Date: June 30th 2023
 Web App name: https://kevin-lamanna-express-site.herokuapp.com/
 */
 

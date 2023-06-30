@@ -1,7 +1,8 @@
 /*
-Filename: business_contact.js
+Filename: business.js
 Author: Kevin Lamanna
 StudentID: 301224451
+Date: June 30th 2023
 Web App name: https://kevin-lamanna-express-site.herokuapp.com/
 */
 
@@ -13,7 +14,6 @@ let contactController = require('../controllers/business_contact');
 // Helper function for guard purposes
 function requireAuth(req, res, next)
 {
-    // check if the user is logged in
     
     // check if the user is logged in
     if(!req.isAuthenticated())
@@ -26,7 +26,7 @@ function requireAuth(req, res, next)
 }
 
 /* GET list of items */
-router.get('/list', contactController.businessContactList);
+router.get('/list', requireAuth, contactController.businessContactList);
 
 // Routers for edit
 router.get('/edit/:id', requireAuth, contactController.displayEditPage);

@@ -1,6 +1,9 @@
+// Clieant-side javascript
+
 
 console.log('app script is working.');
 
+// javascript event handler for delete button
 if(getTitle == "Business Contacts List")
 {
     let deleteButtons = document.querySelectorAll('.btn-danger');
@@ -16,6 +19,7 @@ if(getTitle == "Business Contacts List")
     }
 }
 
+// javascript event handlers for password form authentication
 if(getTitle == "Sign-up Form")
 {
     const confirm = document.querySelector('input[name=password_confirm]');
