@@ -43,5 +43,8 @@
   "homepage": "https://github.com/Kevin-Lamanna/PersonalExpressPortfolioSite#readme",
   "bin": {
     "personalexpressportfoliosite": "bin/server.js"
+  },
+  "engines": {
+    "node": "18.16.0"
   }
 }
